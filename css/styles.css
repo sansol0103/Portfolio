@@ -1,0 +1,50 @@
+@import url(variables.css);
+
+body {
+    margin: auto;
+    max-width: 1200px;
+}
+
+/*Header*/
+
+header {
+    position: sticky;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-font);
+    font-size: 2rem;
+    background-color: #120EB5;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header p {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--default-font);
+    font-size: 1.2rem;
+}
+
+nav li {
+    display: flex;
+}
+
+nav ul {
+    padding: 10px;
+}
+
+/*Main*/
+
+.portfolio img {
+    width: 100%;
+}
