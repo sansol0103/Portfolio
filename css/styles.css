@@ -5,21 +5,24 @@ body {
     max-width: 1200px;
 }
 
+.name, footer {
+    background-color: #120EB5;
+}
+
 /*Header*/
 
 header {
     position: sticky;
 }
 
-.name {
+.name, footer p {
     display: flex;
     justify-content: center;
     font-family: var(--header-font);
     font-size: 2rem;
-    background-color: #120EB5;
 }
 
-header a {
+header a, footer p {
     color: white;
     text-decoration: none;
 }
@@ -45,6 +48,37 @@ nav ul {
 
 /*Main*/
 
+main {
+    font-family: var(--default-font);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 50px auto;
+}
+
+h1, h2 {
+    margin: 50px auto;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.portfolio div {
+    text-align: center;
+}
+
 .portfolio img {
-    width: 100%;
+    width: 80%;
+}
+
+footer {
+    padding: 10px;
+    font-family: var(--header-font);
 }
