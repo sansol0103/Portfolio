@@ -7,12 +7,17 @@ body {
 
 .name, footer {
     background-color: #120EB5;
+    padding: 10px;
 }
 
 /*Header*/
 
 header {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+
 }
 
 .name, footer p {
@@ -46,6 +51,10 @@ nav ul {
     padding: 10px;
 }
 
+nav a {
+    color: black;
+}
+
 /*Main*/
 
 main {
@@ -53,7 +62,7 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 h1, h2 {
@@ -130,8 +139,3 @@ section {
 }
 
 /*Footer*/
-
-footer {
-    padding: 10px;
-    font-family: var(--header-font);
-}
